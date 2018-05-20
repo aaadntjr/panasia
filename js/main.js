@@ -19,9 +19,18 @@ $(document).ready(function(){
 	setInterval(slide,2000);
 	
 	
-	/*$(".content a").hover(function(){
-		$(this).css("margin","-1rem");
-		$(this).siblings().css("margin","0");
-	});*/
+    $(document).scroll(function(){
+       if($(document).scrollTop() > 200){
+           $('.top-bt').css('opacity','1');
+       } else {
+           $('.top-bt').css('opacity','0');
+       }
+    });
+    
+    $('.top-bt').click(function(){
+        $('html').animate({scrollTop : 0},"slow");
+        
+        return false;
+    });
 	
 })//레디펑션
