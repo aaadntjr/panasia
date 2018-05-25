@@ -20,7 +20,8 @@ $(document).ready(function(){
 	
 	
     $(document).scroll(function(){
-       if($(document).scrollTop() > 200){
+		
+       if($(document).scrollTop() > 150){
            $('.top-bt').css('opacity','1');
        } else {
            $('.top-bt').css('opacity','0');
@@ -28,7 +29,7 @@ $(document).ready(function(){
     });
     
     $('.top-bt').click(function(){
-        $('html').animate({scrollTop : 0},"slow");
+        $('html').animate({scrollTop : 0},"normal");
         
         return false;
     });
