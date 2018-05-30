@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	
+//	페이드 슬라이드쇼
 	var now = 0;
 	var count = 2;
 	var slideImg = $(".wrap section .slide img");
@@ -16,9 +16,10 @@ $(document).ready(function(){
 		
 	}
 	
-	setInterval(slide,2000);
+	setInterval(slide,2000);/* 슬라이드쇼 끝*/
 	
 	
+	/*맨 위로 올라가는 버튼 만들기*/
     $(document).scroll(function(){
 		
        if($(document).scrollTop() > 150){
@@ -33,5 +34,6 @@ $(document).ready(function(){
         
         return false;
     });
+	
 	
 })//레디펑션

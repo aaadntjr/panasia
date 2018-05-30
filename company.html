@@ -3,7 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Company</title>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="css/company.css">
+	<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+	<script src="js/company.js"></script>
+	
 		
 </head>
 <body>
@@ -12,7 +16,7 @@
 			<div class="head">
 				<a href="index.html"><h1><img src="img/logo.png" alt="logo"></h1></a>
 				<ul class="gnb">
-					<li><a href="company.html">COMPANY</a></li>
+					<li><a href="company.html" data-split="COMPANY">COMPANY</a></li>
 					<li><a href="#">MENU</a></li>
 					<li><a href="#">STORE</a></li>
 					<li><a href="#">NOTICE</a></li>
@@ -22,18 +26,40 @@
 		</header>
 		
 		<section>
-			
+			<div class="lnb">
+				<ul class="lnb_main">
+					<li class="lnb_main_item"><a href="#">COMPANY</a>
+						<ul class="lnb_sub">
+							<li class="lnb_sub_item" data-split="ABOUT"><a href="#">ABOUT</a></li>
+							<li class="lnb_sub_item" data-split="IDENTITY"><a href="#">IDENTITY</a></li>
+						</ul>
+					</li>
+					<li class="lnb_main_item"><a href="#">MENU</a>
+						<ul class="lnb_sub">
+							<li class="lnb_sub_item" data-split="MAIN MENU"><a href="#">MAIN MENU</a></li>
+							<li class="lnb_sub_item" data-split="SUB MENU"><a href="#">SUB MENU</a></li>
+						</ul>
+					</li>
+					<li class="lnb_main_item"><a href="#">STORE</a>
+						<ul class="lnb_sub">
+							<li class="lnb_sub_item" data-split="LOCATION"><a href="#">LOCATION</a></li>
+						</ul>
+					</li>
+					<li class="lnb_main_item"><a shref="#">NOTICE</a></li>
+					<li class="lnb_main_item"><a href="#">FRANCISE</a></li>
+				</ul>
+			</div>
 			<div class="company"> <!--컨텐츠 공간-->
 			
 				<p class="menu-name"><!-- 메뉴이름-->
-				<b>COMPANY</b>
+				<b>ABOUT</b>
 				</p>
 			</div>	
 			
 			
 			<div class="company-main"><!-- 컨텐츠 이미지-->
 			
-				<div class="company-title"><!-- 컨텐츠 타이트-->
+				<div class="company-title"><!-- 컨텐츠 타이틀-->
 					<p>아시안 캐주얼 다이닝</p>
 					<h3>PANASIA</h3>
 				</div>
