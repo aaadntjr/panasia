@@ -22,7 +22,7 @@ $(document).ready(function(){
 	/*맨 위로 올라가는 버튼 만들기*/
     $(document).scroll(function(){
 		
-       if($(document).scrollTop() > 150){
+       if($('html').scrollTop() > 150){
            $('.top-bt').css('opacity','1');
        } else {
            $('.top-bt').css('opacity','0');
@@ -35,5 +35,10 @@ $(document).ready(function(){
         return false;
     });
 	
+	$("header").css({"opacity":".8"});
+	$("section").css({"opacity":"1","transform":"translate(0,0)"});
+	$(".content").css({"opacity":"1","transform":"translate(0,0)"});
 	
+	
+
 })//레디펑션
