@@ -159,7 +159,7 @@ section .slide > img {
 	bottom: 0;
 	left: 0;
 	right: 0;
-	transition: .3s cubic-bezier(0.61,-0.35, 0.48, 1.78);
+	transition: .3s;
 	border: 0 solid white;
 }
 
@@ -244,7 +244,7 @@ footer {
 .top-bt {
 	width: 4rem;
 	height: 2rem;
-	background: orangered;
+	background: #ffa875;
 	position: fixed;
 	left: 50%;
 	bottom: 50px;
@@ -259,7 +259,7 @@ footer {
 .top-bt::after {
 	content: '';
 	border: 10px solid rgba(255, 69, 0, 0);
-	border-bottom-color: orangered;
+	border-bottom-color: #ffa875;
 	position: absolute;
 	top: -20px;
 	left: 50%;
